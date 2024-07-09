@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Peliculas</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Buscador de Peliculas</h1>
+        <form id="dataForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
 
-    <script src="./js/main.js"></script>
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" required>
+
+            <button type="submit">Agregar Dato</button>
+        </form>
+        <ul id="dataList"></ul>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
